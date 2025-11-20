@@ -1,0 +1,117 @@
+/* custom overrides and Netlify-like look using Bootstrap baseline */
+
+/* page background */
+body {
+  background-color: #f1f3f5;
+  font-family: Inter, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(18, 22, 26, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.site-header .nav-link {
+  color: #111827 !important;
+  font-weight: 600;
+}
+.site-header .btn-signup {
+  background: #00c7b7;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.45rem 1rem;
+  font-weight: 600;
+  border: none;
+}
+
+/* Hero */
+.hero {
+  padding: 4.5rem 0;
+  text-align: center;
+  background: linear-gradient(180deg, #f8fafb 0%, #f1f3f5 100%);
+  margin-bottom: 2.5rem;
+}
+.hero .headline {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #111827;
+}
+@media (max-width: 768px) {
+  .hero .headline { font-size: 2.2rem; }
+}
+.hero .sub {
+  color: #6b7280;
+  margin: 1rem 0 1.6rem 0;
+  font-size: 1.05rem;
+}
+.hero .cta {
+  background: #00c7b7;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 700;
+  border: none;
+}
+
+/* Layout: sidebar + main */
+.page-row {
+  display: flex;
+  gap: 2rem;
+  padding: 0 3rem 3rem 3rem;
+}
+.sidebar {
+  width: 230px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.6rem;
+  box-shadow: 0 6px 20px rgba(16,24,40,0.04);
+  height: fit-content;
+  position: sticky;
+  top: 90px;
+}
+.sidebar h5 { font-weight: 800; }
+.sidebar .nav-link { color: #374151; font-weight: 600; padding: .35rem 0; }
+
+/* Main content */
+.main-content {
+  flex: 1;
+}
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+  color: #111827;
+}
+
+/* Cards grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+.card-stat {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+}
+.card-stat h6 { font-weight: 700; color: #111827; }
+.card-stat p { font-size: 1.4rem; font-weight: 700; margin: .5rem 0 0 0; }
+
+/* Footer */
+.site-footer {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+  color: #6b7280;
+  box-shadow: 0 -2px 6px rgba(18, 22, 26, 0.02);
+}
+
+/* small helper */
+.logo-img { width: 110px; }
